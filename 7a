@@ -1,0 +1,117 @@
+Exercise 7 – Introduction to Angular, Data binding and built-in directives
+a) Design a sample web page using Angular, and print “Hello Angular” message.
+Creating the Angular HelloWorld Application
+Step 1
+Create a folder for your application in the desired location on your system and open it on VSCode.
+Open a new terminal and type in the following command to create your app folder.
+ng create hello-world or
+ng new hello-world
+When the command is run, Angular creates a skeleton application under the folder. It also includes
+a bunch of files and other important necessities for the application. 
+Step 2
+To run the application, change the directory to the folder created, and uses the ng command.
+cd hello
+ng serve
+Once run, open your browser and navigate to localhost:4200. If another application is running on
+that address, you can simply run the command.
+ng serve
+It will generate a port for you to navigate to. Typically, the browser looks something like t
+You can leave the ng serve command running in the terminal, and continue making changes. If you
+have the application opened in your browser, it will automatically refresh each time you save your
+changes. This makes the development quick and iterative
+Basics of an Angular App
+At its core, any Angular application is still a Single
+triggered by a main request to the server. When we open any URL in our browser, the very first
+request is made to our server. This initial request is satisfied by an HTML page, which then loads
+the necessary JavaScript files to load Angular as well as our application code and templates.
+Root HTML - index.html
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>HelloWorld</title>
+ <base href="/">
+ <meta name="viewport" content="width=device
+ <link rel="icon" type="image/x
+</head>
+<body>
+ <app-root></app-root>
+</body>
+</html>
+The root component looks very pristine and neat, with barely any references or dependencies. The
+only main thing in this file is the
+WD SKILL ADVANCED COURSE LAB
+To run the application, change the directory to the folder created, and uses the ng command.
+cd hello-world
+ve
+Once run, open your browser and navigate to localhost:4200. If another application is running on
+that address, you can simply run the command.
+ng serve—port
+It will generate a port for you to navigate to. Typically, the browser looks something like t
+You can leave the ng serve command running in the terminal, and continue making changes. If you
+have the application opened in your browser, it will automatically refresh each time you save your
+changes. This makes the development quick and iterative.
+At its core, any Angular application is still a Single-Page Application (SPA), and thus its loading is
+triggered by a main request to the server. When we open any URL in our browser, the very first
+This initial request is satisfied by an HTML page, which then loads
+the necessary JavaScript files to load Angular as well as our application code and templates.
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+ry pristine and neat, with barely any references or dependencies. The
+only main thing in this file is the <app-root> element. This is the marker for loading the
+application. All the application code, styles, and inline templates are dynamically injected into the
+index.html file at run time by the ng serve command.
+The Entry Point - main.ts
+The second important part of our bootstrapping piece is the main.ts file. The index.html file is
+responsible for deciding which files are to be loaded. The main.ts file, on the other hand, identifies
+which Angular module is to be loaded when the application starts.
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
+if (environment.production) {
+ enableProdMode();
+}
+platformBrowserDynamic().bootstrapModule(AppModule)
+.catch(err => console.error(err));
+Most of the code in the main.ts file is generic, and you will rarely have to touch or change this entry
+point file. Its main aim is to point the Angular framework at the core module of your application
+and let it trigger the rest of your application source code from that point.
+Main Module - app.module.ts
+This is where your application-specific source code starts from. The application module file can be
+thought of as the core configuration of your application, from loading all the relevant and necessary
+dependencies, declaring which components will be used within your application, to marking which
+is the main entry point component of your application.
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+@NgModule({
+ declarations: [
+ AppComponent
+ ],
+ imports: [
+ BrowserModule,
+ AppRoutingModule
+ ],
+ providers: [],
+ bootstrap: [AppComponent]
+})
+export class AppModule { }
+Root Component – AppComponent
+The app.component.ts is the actual Angular code that drives the functionality of the application.
+import { Component } from '@angular/core'; 
+
+@Component({
+ selector: 'app-root',
+ templateUrl: './app.component.html',
+ styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+ title = 'hello-Angular';
+}
+Back in our app.component.html file of the Angular HelloWorld application, you can delete all the
+code and type in something that you wish to render on the browser.
+<img src= "assets/logo.png" class="center" width="200" height="80" display:block>
+<h1>Hello! Students Welcome to the Angular tutorial</h1>
+The browser looks like this
