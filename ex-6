@@ -1,0 +1,52 @@
+Example-a: Write a simple typescript program which describes the different types of variables.
+var nme:string = "BSPanda";
+var score1:number = 50;
+var score2:number = 42.50
+var sum = score1 + score2
+console.log("name"+nme)
+console.log("first score: "+score1) 
+console.log("second score: "+score2)
+console.log("sum of the scores: "+sum)
+The output of the above program is given below –
+name:BSPanda
+first score:50
+second score:42.50
+sum of the scores:92.50
+Example-b: Write a typescript which describes arrow functions.
+To type out the keyword function every time you need to create a function. Instead, you first
+include the parameters inside the ( ) and then add an arrow => that points to the function body
+surrounded in { }
+Ex1:
+let sum = (a, b) => {
+ return a + b;
+};
+console.log(sum(20, 30)); //returns 50
+Arrow function without a parameter
+Ex2:
+let Print = () => console.log("Hello Welcome to TypeScript!");
+Print(); //output: Hello Welcome to TypeScript!
+Example-c: Write a typescript program for creation of a class and also perform simple inheritance.
+Inheritance is an aspect of OOPs languages, which provides the ability of a program to create a new
+class from an existing class. It is a mechanism which acquires the properties and behaviors of a
+class from another class. The class whose members are inherited is called the base class, and the
+class that inherits those members is called the derived/child/subclass. In child class, we can
+override or modify the behaviors of its parent class.
+class Car {
+ Color:string
+ constructor(color:string) {
+ this.Color = color
+ }
+}
+class Audi extends Car {
+ Price: number
+ constructor(color: string, price: number) {
+ super(color);
+ this.Price = price;
+ } 
+display():void {
+ console.log("Color of Audi car: " + this.Color);
+ console.log("Price of Audi car: " + this.Price);
+ }
+}
+let obj = new Audi(" Black", 8500000 );
+obj.display();
