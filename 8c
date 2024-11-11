@@ -1,0 +1,31 @@
+c) Design a simple angular application which describes the usages of Dependency Injection.
+Dependency injection is the ability to add the functionality of components at runtime.
+//app.service.ts.
+import {
+ Injectable
+} from '@angular/core';
+@Injectable()
+export class appService {
+ getApp(): string {
+ return "Hello world";
+ }
+}
+//app.component.ts
+import {
+ Component
+} from '@angular/core';
+import {
+ appService
+} from './app.service';
+@Component({
+ selector: 'my-app',
+ template: '<div>{{value}}</div>',
+ providers: [appService]
+})
+export class AppComponent {
+ value: string = "";
+ constructor(private _appService: appService) { }
+ ngOnInit(): void {
+ this.value = this._appService.getApp();
+ }
+}
