@@ -1,0 +1,27 @@
+Excercise-2
+
+a) Example Design a table:
+<html>
+<head>
+<title>Time table</title>
+</head>
+<body> <h1 align="center">TimeTable</h1>
+<hr> <br>
+<table align="center" width="100" height="50" cellspacing="5"
+cellpadding="5" border="3" bgcolor="#EEF3D3" bordercolor="red">
+<tr> <th>III</th> <th>9:30 -10:20</th> <th>10:20 - 11:10</th>
+<th>11:10 - 12:00</th> <th>12:00 - 1:00</th> <th>1:00 - 1:50</th>
+ <th>1:50 - 2:40</th>
+</tr> <tr> <td>MON</td> <td colspan="2" align="center">DAA</td>
+ <td>ML</td> <td rowspan="6">LUNCH BREAK</td> <td>SKILL</td>
+ <td bgcolor="cyan">LIB</td>
+</tr> <tr> <td>TUE</td> <td colspan="2" align="center">CN</td>
+ <td bgcolor="skyblue">CRT/ML(T)</td> <td colspan="2"
+align="center">SKILL LAB</td>
+</tr> <tr> <td>WED</td> <td colspan="2" align="center">SKILL</td>
+<td bgcolor="skyblue">CRT/DAA(T)</td> <td colspan="2" align="center">DAA LAB</td>
+</tr> <tr> <td>THU</td> <td colspan="2" align="center">CN</td><td>SPORTS</td><td colspan
+="2">DBMS LAB</td>
+</table>
+</body>
+</html>
