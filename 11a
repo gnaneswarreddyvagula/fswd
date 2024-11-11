@@ -1,0 +1,12 @@
+11a) 11aCreate NodeJS applications, which depicts how client server communication done
+using http module.
+Node.js has a built-in module called HTTP, which allows Node.js to transfer data over the Hyper
+Text Transfer Protocol (HTTP).
+To include the HTTP module, use the require() method:
+Code:
+var http = require('http');
+http.createServer(function (req, res) {
+ res.writeHead(200, {'Content-Type': 'text/html'});
+ res.write('Hello World!');
+ res.end();
+}).listen(8080); 
