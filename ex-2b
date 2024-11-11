@@ -1,0 +1,38 @@
+Example Design a sign-up form:
+<html>
+<title>Registraion Page</title>
+<form action="submit.htm">
+<center>
+<table border=1 bgcolor="yellow" width = "350" height = "350">
+ <caption><h1>Registration Form</h1></caption>
+<tr><td>Name : </td><td><Input type=text name=txtname size=20></td></tr>
+<tr><td>Password :</td><td><Input type=password name=txtpwd size=10></td></tr>
+<tr><td>Email : </td><td><Input type=text name=txtemail size=20></td></tr>
+<tr><td>Phone number : </td><td><Input type=text name=txtphone size=12></td></tr>
+<tr><td>Sex : </td><td><Input type=radio name=radsex value=M>Male <Input type=radio
+name=radsex value=F>Female</td></tr>
+<tr><td>Date of Birth : </td><td><select name=day>
+ <option value="10">1</option>
+ <option value="22">2</option>
+ <option value="30">2</option>
+ </select>
+ <select name=month>
+ <option value="Jan">Jan</option>
+ <option value="Feb">Feb</option>
+ <option value="Mar">Mar</option>
+ </select>
+ <select name=Year>
+ <option value="2002">2002</option>
+ <option value="2020">2020</option>
+ <option value="2024">2024</option>
+ </select> </td></tr>
+<tr><td>Languages Known : </td><td><Input type=checkbox name=telugu value=telugu>Telugu
+<Input type=checkbox name=Hindi value=Hindi>Hindi <Input type=checkbox name=English
+value=English>English</td></tr>
+<tr><td><Input type=Submit name=btnsubmit value=Submit></td><td><Input type=Reset
+name=btnreset value=Reset></td></tr>
+Output:
+</table>
+</center>
+</form>
+</html>
