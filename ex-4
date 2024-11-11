@@ -1,0 +1,95 @@
+Example-a: CSS SELECTORS CLASS & ID
+The id selector uses the id attribute of an HTML element to select a specific element.
+The id of an element is unique within a page, so the id selector is used to select one unique
+element!
+To select an element with a specific id, write a hash (#) character, followed by the id of the
+element.
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#bsp {
+text-align: center;
+color: red;
+}
+</style>
+</head>
+<body>
+<p id="bsp">Hello World!</p>
+<p>This paragraph is not affected by the style.</p>
+</body>
+</html>
+The CSS class Selector
+The class selector selects HTML elements with a specific class attribute.
+To select elements with a specific class, write a period (.) character, followed by the class name.
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+text-align: center;
+color: red; } 
+
+</style>
+</head>
+<body>
+<h1 class="center">Red and center-aligned heading</h1>
+<p class="center">Red and center-aligned paragraph.</p>
+</body>
+</html>
+Example-b: CSS border / padding /margin
+<html>
+<head>
+<style>
+h1 {
+ border: 3px solid blue;
+ padding: 20px;
+}
+p {
+ border: 4px solid red;
+ padding: 30px;
+}
+b{
+ border: 2px solid green;
+ margin: 50px;
+}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a first paragraph.</p>
+<p>This is a second paragraph.</p>
+<b>This is a text.</b>
+<b> welcome to margin & padding of CSS </b>
+</body>
+</html>
+
+
+Example-c: Bootstrap
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+ <h2>Dropdowns</h2>
+
+ <div class="dropdown">
+ <button class="btn btn-primary dropdown-toggle" type="button" datatoggle="dropdown">Dropdown Example
+ <span class="caret"></span></button>
+ <ul class="dropdown-menu">
+ <li><a href="#">HTML</a></li>
+ <li><a href="#">CSS</a></li>
+ <li><a href="#">JavaScript</a></li>
+ </ul>
+ </div>
+</div>
+</body>
+</html>
