@@ -36,3 +36,16 @@ To use an external style sheet, add a link to it in the <head> section of each H
 <p>This is a paragraph.</p>
 </body>
 </html> 
+
+
+Style.css
+body {
+ background-color: pink;
+}
+h1 {
+ color: green;
+}
+p {
+ color: red;
+} 
+
