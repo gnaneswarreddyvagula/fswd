@@ -1,0 +1,54 @@
+exercise-1:
+a) Example1: Basic html tags:
+<html>
+<head>
+<title> my first html program </title>
+</head>
+<body bgcolor ="red">
+<h1> <center> this is my details </center></h1>
+<hr>
+<b> Dr. B S Panda </b><br>
+<u> Dept of CSE </u><br>
+<i> REC </i>
+</body>
+</html>
+a) Example2: basic image and hyperlink tags
+<html>
+<head>
+<title> Add image & Link </title>
+</head>
+<body bgcolor = "#985CCDD">
+<h1> <center> MY IMAGE </center> </h1>
+<hr color ="red">
+<center><img src = "RE0127.jpg" border ="7" height = "150" width = "150">
+<h4> <center> add a hyper link </center></h4>
+<a href = "logo.png"> Raghulogo </a><br>
+<a href = "abc.pdf"> my file </a>
+</center>
+</body>
+</html>
+b) Example3: usage of different type of li
+<html>
+<head>
+<title> add list in a page </title>
+</head>
+<body bgcolor = "cyan">
+<h1> MY LIST </h1>
+<marquee scrolldelay = "100" bgcolor= "yellow"> ORDER LIST </marquee>
+<hr color ="black">
+<ol type ="a">
+<li> CSE </li>
+<li> CSM </li>
+<li> CSO </li>
+<li> CSD </li>
+</ol>
+<marquee scrolldelay = "50" bgcolor = "red" behavior= "alternate"> UNORDER LIST </marquee>
+<hr color ="cyan">
+<ul type ="circle">
+<li> CSE </li>
+<li> CSM </li>
+<li> CSO </li>
+<li> CSD </li>
+</uL>
+</body>
+</html>
